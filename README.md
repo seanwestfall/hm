@@ -1,5 +1,11 @@
 # hm
 
+# build
+`bash
+# ghc -o dist/hm --make src/hs.hs
+# ./dist/hm ...
+`
+
 # imgs
 ![](https://github.com/seanwestfall/hm/blob/master/img/img_1.png)
 ![](https://github.com/seanwestfall/hm/blob/master/img/img_2.png)
