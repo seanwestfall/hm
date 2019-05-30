@@ -1,2 +1,3 @@
 src/hm.hi
 src/hm.o
+dist/*
