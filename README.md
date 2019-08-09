@@ -8,6 +8,14 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 # ./dist/hm ...
 ```
 
+# Type System
+* An `Atom`, which stores a String naming the atom
+* A `List`, which stores a list of other `LispVals` (Haskell lists are denoted by brackets); also called a `proper` list
+* A `DottedList`, representing the `Scheme` form `(a b . c)`; also called an `improper` list. This stores a list of all elements but the last, and then stores the last element as another field
+* A `Number`, containing a Haskell Integer
+* A `String`, containing a Haskell String
+* A `Bool`, containing a Haskell boolean value
+
 # imgs
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_1.png)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_2.png)
