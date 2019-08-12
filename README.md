@@ -17,13 +17,13 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 * A `Bool`, containing a Haskell boolean value
 
 # Primitive Operations
-* + plus/addition operator
-* - minus/subtraction operator
-* * times/multiplication operator
-* / divide operator
-* mod modulus operator
-* quotient quotient operator
-* remainder remainder operator / returns the remainder
+* `+` plus/addition operator
+* `-` minus/subtraction operator
+* `*` times/multiplication operator
+* `/` divide operator
+* `mod` modulus operator
+* `quotient` quotient operator
+* `remainder` remainder operator / returns the remainder
 
 # imgs
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_1.png)
