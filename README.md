@@ -8,7 +8,10 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 # ./dist/hm ...
 ```
 
-# Type System
+# Language Features (Types & Operators)
+Most Features of the Type System and Operators come R5RS (https://schemers.org/Documents/Standards/R5RS/HTML/) of Scheme, the standard for Scheme like Languages
+
+## Type System
 * An `Atom`, which stores a String naming the atom
 * A `List`, which stores a list of other `LispVals` (Haskell lists are denoted by brackets); also called a `proper` list
 * A `DottedList`, representing the `Scheme` form `(a b . c)`; also called an `improper` list. This stores a list of all elements but the last, and then stores the last element as another field
@@ -16,7 +19,7 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 * A `String`, containing a Haskell String
 * A `Bool`, containing a Haskell boolean value
 
-# Primitive Operations
+## Primitive Operations
 * `+` plus/addition operator
 * `-` minus/subtraction operator
 * `*` times/multiplication operator
@@ -24,6 +27,10 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 * `mod` modulus operator
 * `quotient` quotient operator
 * `remainder` remainder operator / returns the remainder
+
+## Conditionals
+
+## List Operations
 
 # imgs
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_1.png)
