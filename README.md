@@ -8,6 +8,12 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 # ./dist/hm ...
 ```
 
+# Cabal
+```bash
+# cabal build
+# ./dist-newstyle/build/x86_64-osx/ghc-8.6.5/hm-0.1.0.0/x/hm/build/hm/hm
+```
+
 # Language Features (Types & Operators)
 Most Features of the Type System and Operators come R5RS (https://schemers.org/Documents/Standards/R5RS/HTML/) of Scheme, the standard for Scheme like Languages
 
