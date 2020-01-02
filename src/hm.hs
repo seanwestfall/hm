@@ -188,13 +188,6 @@ readExpr = readOrThrow parseExpr
 
 readExprList = readOrThrow (endBy parseExpr spaces)
 
-{--
-readExpr :: String -> ThrowsError LispVal
-readExpr input = case parse parseExpr "lisp" input of
-    Left err -> throwError $ Parser err
-    Right val -> return val
---}
-
 ioPrimitives :: [(String, [LispVal] -> IOThrowsError LispVal)]
 ioPrimitives = [("apply", applyProc),
                 ("open-input-file", makePort ReadMode),
@@ -268,6 +261,8 @@ eval env (List [Atom "set!", Atom var, form]) =
      eval env form >>= setVar env var
 eval env (List [Atom "define", Atom var, form]) =
      eval env form >>= defineVar env var
+eval env (List [Atom "load", String filename]) = 
+     load filename >>= liftM last . mapM (eval env)
 eval env (List (Atom "define" : List (Atom var : params) : body)) =
      makeNormalFunc env params body >>= defineVar env var
 eval env (List (Atom "define" : DottedList (Atom var : params) varargs : body)) =
@@ -282,8 +277,6 @@ eval env (List (function : args)) = do
      func <- eval env function
      argVals <- mapM (eval env) args
      apply func argVals
-eval env (List [Atom "load", String filename]) = 
-     load filename >>= liftM last . mapM (eval env)
 eval env badForm = throwError $ BadSpecialForm "Unrecognized special form" badForm
 
 main :: IO ()
