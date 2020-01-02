@@ -169,16 +169,6 @@ makeVarArgs = makeFunc . Just . showVal
 
 -- Main
 
-parseExpr :: Parser LispVal
-parseExpr = parseAtom
-         <|> parseString
-         <|> parseNumber
-         <|> parseQuoted
-         <|> do char '('
-                x <- try parseList <|> parseDottedList
-                char ')'
-                return x
-
 readOrThrow :: Parser a -> String -> ThrowsError a
 readOrThrow parser input = case parse parser "lisp" input of
     Left err  -> throwError $ Parser err

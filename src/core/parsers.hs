@@ -5,6 +5,7 @@ module Core.Parsers
 , parseQuoted
 , parseList
 , parseDottedList
+, parseExpr
 ) where
 
 import Text.ParserCombinators.Parsec hiding (spaces)
