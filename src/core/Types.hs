@@ -14,6 +14,7 @@ import Control.Monad
 import Control.Monad.Except
 import Text.ParserCombinators.Parsec hiding (spaces)
 import Data.IORef
+import System.IO
 
 import Core.Utils
 -- import Core.Parsers
@@ -45,6 +46,8 @@ showVal (Bool False) = "#f"
 showVal (List contents) = "(" ++ unwordsList contents ++ ")"
 showVal (DottedList head tail) = "(" ++ unwordsList head ++ " . " ++ showVal tail ++ ")"
 showVal (PrimitiveFunc _) = "<primitive>"
+showVal (Port _)   = "<IO port>"
+showVal (IOFunc _) = "<IO primitive>"
 showVal (Func {params = args, vararg = varargs, body = body, closure = env}) =
    "(lambda (" ++ unwords (map show args) ++
       (case varargs of
