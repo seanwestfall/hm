@@ -2,7 +2,7 @@
 # hm
 An implementation of the Hindley-Milner type system ([wikipedia](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)) in a simple Scheme/Lisp like language.
 
-# Theory
+# theory
 ![https://youtu.be/x3evzO8O9e8](https://raw.githubusercontent.com/seanwestfall/hm/master/img/spj_video.png)
 Simon Peyton Jones how GHC type inference engine actually works [Watch Here](https://youtu.be/x3evzO8O9e8)  
 A Practical Type Checker for Scheme by Christian Lindig [Read Here](https://github.com/seanwestfall/scientific_papers/blob/master/papers/10.1.1.56.9923.pdf)  
