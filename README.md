@@ -4,7 +4,9 @@ An implementation of the Hindley-Milner type system ([wikipedia](https://en.wiki
 
 # Theory
 ![https://youtu.be/x3evzO8O9e8](https://raw.githubusercontent.com/seanwestfall/hm/master/img/spj_video.png)
-Simon Peyton Jones how GHC type inference engine actually works
+[Simon Peyton Jones how GHC type inference engine actually works](https://youtu.be/x3evzO8O9e8)
+A Practical Type Checker for Scheme by Christian Lindig [Read Here](https://github.com/seanwestfall/scientific_papers/blob/master/papers/10.1.1.56.9923.pdf)
+The Design and Implementation of Typed Scheme by Sam Tobin-Hochstadt and Mathhias Felleisen [Read Here](https://github.com/seanwestfall/scientific_papers/blob/master/papers/popl08-thf.pdf)
 
 # build
 ```bash
