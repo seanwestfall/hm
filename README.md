@@ -44,6 +44,16 @@ Most Features of the Type System and Operators come R5RS (https://schemers.org/D
 
 ## List Operations
 
+## Functions
+
+```
+./hm
+hm>>> (define (f x y) (+ x y))
+(lambda ("x" "y") ...)
+hm>>> (f 1 2)
+3
+```
+
 # imgs
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_1.png)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_2.png)
