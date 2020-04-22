@@ -21,7 +21,10 @@ The Design and Implementation of Typed Scheme by Sam Tobin-Hochstadt and Mathhia
 ```
 
 # Language Features (Types & Operators)
-Most Features of the Type System and Operators come R5RS (https://schemers.org/Documents/Standards/R5RS/HTML/) of Scheme, the standard for Scheme like Languages
+Most Features of the Type System and Operators come from R5RS (https://schemers.org/Documents/Standards/R5RS/HTML/) of Scheme, the standard for Scheme like Languages.
+
+## Type rules of R5RS Scheme
+![Scheme Type Rules](https://raw.githubusercontent.com/seanwestfall/hm/master/img/scheme_type_rules.png)
 
 ## Type System
 * An `Atom`, which stores a String naming the atom
