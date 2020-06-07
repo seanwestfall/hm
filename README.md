@@ -62,7 +62,7 @@ hm>>> (f 1 2)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_2.png)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_2_2.png)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_3.png)
-![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_9.png)
+<!-- ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_9.png) -->
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_4.png)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_5.png)
 ![](https://raw.githubusercontent.com/seanwestfall/hm/master/img/img_6.png)
