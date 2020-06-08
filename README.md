@@ -25,6 +25,7 @@ Most Features of the Type System and Operators come from R5RS (https://schemers.
 
 ## Type rules of R5RS Scheme
 ![Scheme Type Rules](https://raw.githubusercontent.com/seanwestfall/hm/master/img/scheme_type_rules.png)
+![Operational Semantics](https://raw.githubusercontent.com/seanwestfall/hm/master/img/operational_semantics.png)
 
 ## Type System
 * An `Atom`, which stores a String naming the atom
