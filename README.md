@@ -1,4 +1,4 @@
-![](https://github.com/seanwestfall/hm/blob/master/img/hm.png)
+![](https://github.com/seanwestfall/hm/blob/master/img/hm.png)  
 Robin Milner and J. Roger Hindley  
 
 # hm
