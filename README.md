@@ -1,4 +1,6 @@
 ![](https://github.com/seanwestfall/hm/blob/master/img/hm.png)
+Robin Milner and J. Roger Hindley  
+
 # hm
 An implementation of the Hindley-Milner type system ([wikipedia](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system)) in a simple Scheme/Lisp like language.
 
